@@ -7,12 +7,13 @@ a code exercise for experimenting with [Play Framework](https://www.playframewor
 To Build:
 ---------
 
-* TODO
+* `sdk env`
+* `./compile.sh`
 
 To Run:
 ---------
 
-* TODO
+* `./run.sh`
 
 Rules:
 ---------

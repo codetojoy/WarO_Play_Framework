@@ -33,6 +33,7 @@ public class PersonController extends Controller {
     }
 
     public Result index(final Http.Request request) {
+        System.out.println("TRACER PersonController index cp 0");
         return ok(views.html.index.render(request));
     }
 
@@ -44,6 +45,7 @@ public class PersonController extends Controller {
     }
 
     public CompletionStage<Result> getPersons() {
+        System.out.println("TRACER PersonController getPersons cp 1");
         return personRepository
                 .list()
                 .thenApplyAsync(personStream -> ok(toJson(personStream.collect(Collectors.toList()))), ec.current());

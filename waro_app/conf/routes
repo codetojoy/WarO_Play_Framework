@@ -7,5 +7,9 @@ GET     /                           controllers.PersonController.index(req: Requ
 POST    /person                     controllers.PersonController.addPerson(req: Request)
 GET     /persons                    controllers.PersonController.getPersons()
 
+GET     /player_home                controllers.PlayerController.index(req: Request)
+POST    /player                     controllers.PlayerController.addPlayer(req: Request)
+GET     /players                    controllers.PlayerController.getPlayers()
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
